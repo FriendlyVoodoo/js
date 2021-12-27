@@ -17,6 +17,17 @@ const activeDot = n => {
     dots[n].classList.add('active');
 }
 
+//? Можно еще вариант
+const nextImg = setInterval(() => {
+    if (index == slieds.length - 1) {
+        index = 0
+        prepareCurrentSlide(index);
+    } else {
+        index++
+        prepareCurrentSlide(index);
+    }
+}, 2000);
+
 const activeSlied = n => {
     for (slied of slieds) {
         slied.classList.remove('active');
