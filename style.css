@@ -9,10 +9,12 @@ h1 {
     align-items: center;
     flex-flow: column;
 }
-#tabs {
+#tabs,
+#tabs-dop {
     display: flex;
 }
-.tab-btn {
+.tab-btn,
+.tab-btn__dop {
     width: 100px;
     height: 40px;
     font-size: 20px;
@@ -26,6 +28,10 @@ h1 {
     background-color: blue;
     color: #ffffff;
 }
+.tab-btn__dop.active {
+    background-color: rgb(156, 13, 149);
+    color: #ffffff;
+}
 
 #contents {
     max-width: 300px;
@@ -34,11 +40,13 @@ h1 {
     border: 1px solid black;
 }
 
-.content {
+.content,
+.content-dop {
     display: none;
 }
 
-.content.active {
+.content.active,
+.content-dop.active {
     display: block;
 }
 a {
